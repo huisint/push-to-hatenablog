@@ -1,4 +1,4 @@
-#!/bin/sh
+#! /bin/bash
 
 eval "$(cat .env <(echo) <(declare -x))"
 
