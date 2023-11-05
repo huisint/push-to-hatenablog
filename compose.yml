@@ -1,0 +1,10 @@
+services:
+  blogsync:
+    build: .
+    working_dir: /working_dir
+    volumes:
+      - type: bind
+        source: .
+        target: /working_dir
+    env_file:
+      - .env
